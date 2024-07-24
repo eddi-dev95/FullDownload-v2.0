@@ -50,11 +50,6 @@ p, h1, h2, h3, ol {
   }
 }
 
-.noteInit {
-  color: #000;
-  text-align: center;
-}
-
 .nextSection {
   display: flex;
   justify-content: center;
