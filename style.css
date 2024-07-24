@@ -48,7 +48,9 @@ p, h1, h2, h3, ol {
     font-weight: 300;
   }
 }
-
+.noteInit {
+  color: #000;
+}
 .nextSection {
   display: flex;
   justify-content: center;
