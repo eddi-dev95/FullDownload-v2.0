@@ -24,6 +24,17 @@ p, h1, h2, h3, ol {
   background-color: #fff;
   margin-bottom: 10px;
 }
+@media (max-width: 768px) { /* Target smaller screens (e.g., tablets) */
+  .welcome {
+    min-height: 80vh; /* Adjust the minimum height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) { /* Target even smaller screens (e.g., phones) */
+  .welcome {
+    min-height: 60vh; /* Adjust the minimum height for very small screens */
+  }
+}
 .title {
   margin-top: 0px;
   h1 {
