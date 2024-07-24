@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const observerOptions = {
+    rootMargin: "0px",
+    threshold: 0.5,
+  };
   const animationLink = document.getElementById("plusButtom");
 
   if (animationLink) {
@@ -10,42 +14,43 @@ document.addEventListener("DOMContentLoaded", () => {
           animationLink.classList.remove("visible");
         }
       });
-    });
+    }, observerOptions);
 
     observer.observe(animationLink);
   } else {
     console.error('Elemento con ID "plusButtom" no encontrado');
   }
-});
 
-document.addEventListener("DOMContentLoaded", () => {
   const nextSection = document.querySelector(".nextSection");
 
   if (nextSection) {
-    nextSection.addEventListener("click", function (event) {
+    nextSection.addEventListener("click", (event) => {
       event.preventDefault();
 
-      const targetId = event.target.href.split("#")[1];
+      const targetId = event.currentTarget.hash.substring(1);
       const targetSection = document.getElementById(targetId);
 
       if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth", duration: 2000 });
+        targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
       } else {
-        console.warn("Target section not found:", targetId);
+        console.error(`Sección objetivo no encontrada: ${targetId}`);
       }
     });
   } else {
-    console.warn('Element with class "next-section" not found.');
+    console.warn('Elemento con clase "next-section" no encontrado.');
   }
-});
 
-document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.querySelector(".frame");
 
-  overlay.addEventListener("contextmenu", (event) => {
-    event.preventDefault();
-  });
-  overlay.addEventListener("touchstart", (event) => {
-    event.preventDefault();
-  });
+  if (overlay) {
+    overlay.addEventListener("contextmenu", (event) => {
+      event.preventDefault();
+    });
+
+    overlay.addEventListener("touchstart", (event) => {
+      event.preventDefault();
+    });
+  } else {
+    console.warn('Elemento con clase "frame" no encontrado.');
+  }
 });
