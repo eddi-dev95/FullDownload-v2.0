@@ -1,13 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const animationLink = document.getElementById('plusButtom');
+document.addEventListener("DOMContentLoaded", () => {
+  const animationLink = document.getElementById("plusButtom");
 
   if (animationLink) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          animationLink.classList.add('visible');
+          animationLink.classList.add("visible");
         } else {
-          animationLink.classList.remove('visible');
+          animationLink.classList.remove("visible");
         }
       });
     });
@@ -15,23 +15,23 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(animationLink);
   } else {
     console.error('Elemento con ID "plusButtom" no encontrado');
-  };
+  }
 });
-   
-document.addEventListener('DOMContentLoaded', () => {
-  const nextSection = document.querySelector('.nextSection');
+
+document.addEventListener("DOMContentLoaded", () => {
+  const nextSection = document.querySelector(".nextSection");
 
   if (nextSection) {
-    nextSection.addEventListener('click', function(event) {
+    nextSection.addEventListener("click", function (event) {
       event.preventDefault();
 
-      const targetId = event.target.href.split('#')[1];
+      const targetId = event.target.href.split("#")[1];
       const targetSection = document.getElementById(targetId);
 
       if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth', duration: 2000 });
+        targetSection.scrollIntoView({ behavior: "smooth", duration: 2000 });
       } else {
-        console.warn('Target section not found:', targetId);
+        console.warn("Target section not found:", targetId);
       }
     });
   } else {
@@ -39,10 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-const overlay = document.querySelector('.frame');
+document.addEventListener("DOMContentLoaded", () => {
+  const overlay = document.querySelector(".frame");
 
-overlay.addEventListener('contextmenu', (event) => {
+  overlay.addEventListener("contextmenu", (event) => {
     event.preventDefault();
-});
+  });
+  overlay.addEventListener("touchstart", (event) => {
+    event.preventDefault();
+  });
 });
