@@ -24,13 +24,13 @@ p, h1, h2, h3, ol {
   background-color: #fff;
   margin-bottom: 10px;
 }
-@media (max-width: 768px) { /* Target smaller screens (e.g., tablets) */
+@media (max-width: 960px) { /* Target smaller screens (e.g., tablets) */
   .welcome {
     min-height: 70vh; /* Adjust the minimum height for smaller screens */
   }
 }
 
-@media (max-width: 480px) { /* Target even smaller screens (e.g., phones) */
+@media (max-width: 600px) { /* Target even smaller screens (e.g., phones) */
   .welcome {
     min-height: 100vh; /* Adjust the minimum height for very small screens */
   }
