@@ -35,6 +35,7 @@ p, h1, h2, h3, ol {
     min-height: 100vh; /* Adjust the minimum height for very small screens */
   }
 }
+
 .title {
   margin-top: 10px;
   h1 {
@@ -48,9 +49,12 @@ p, h1, h2, h3, ol {
     font-weight: 300;
   }
 }
+
 .noteInit {
   color: #000;
+  text-align: center;
 }
+
 .nextSection {
   display: flex;
   justify-content: center;
