@@ -32,7 +32,7 @@ p, h1, h2, h3, ol {
 
 @media (max-width: 480px) { /* Target even smaller screens (e.g., phones) */
   .welcome {
-    min-height: 60vh; /* Adjust the minimum height for very small screens */
+    min-height: 100vh; /* Adjust the minimum height for very small screens */
   }
 }
 .title {
