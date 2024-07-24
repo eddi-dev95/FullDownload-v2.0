@@ -17,8 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, observerOptions);
 
     observer.observe(animationLink);
-  } else {
-    console.error('Elemento con ID "plusButtom" no encontrado');
   }
 
   const nextSection = document.querySelector(".nextSection");
@@ -32,12 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (targetSection) {
         targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-      } else {
-        console.error(`Sección objetivo no encontrada: ${targetId}`);
       }
     });
-  } else {
-    console.warn('Elemento con clase "next-section" no encontrado.');
   }
 
   const overlay = document.querySelector(".frame");
@@ -50,7 +44,5 @@ document.addEventListener("DOMContentLoaded", () => {
     overlay.addEventListener("touchstart", (event) => {
       event.preventDefault();
     });
-  } else {
-    console.warn('Elemento con clase "frame" no encontrado.');
   }
 });
