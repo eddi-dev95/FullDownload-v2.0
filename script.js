@@ -38,3 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
     console.warn('Element with class "next-section" not found.');
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+const overlay = document.querySelector('.frame');
+
+overlay.addEventListener('contextmenu', (event) => {
+    event.preventDefault();
+});
+});
