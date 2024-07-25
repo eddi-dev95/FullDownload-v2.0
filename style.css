@@ -113,7 +113,6 @@ p, h1, h2, h3, ol {
 
 .info {
   background-image: linear-gradient(to bottom right, #0096FF, #BB64FF, #F55273);
-  /*box-shadow: 0px 0px 10px rgba(125,119,125,1);  theme-dark: 0px 0px 10px rgba(0,0,0,1); */
 }
 
 .addLink {
