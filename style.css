@@ -1,20 +1,24 @@
-body{
-   background-color: #f6f6f7;
-   font-family: system-ui;
+body {
+  background-color: #f6f6f7;
+  font-family: system-ui;
+
   a {
     color: #fff;
     text-decoration: none;
   }
 }
+
 section {
   max-width: 480px;
   margin: 0 auto;
   padding: 1.5rem;
   border-radius: 20px;
 }
+
 p, h1, h2, h3, ol {
   color: #fff;
 }
+
 .welcome {
   display: flex;
   flex-direction: column;
@@ -24,15 +28,22 @@ p, h1, h2, h3, ol {
   background-color: #fff;
   margin-bottom: 10px;
 }
-@media (max-width: 960px) { /* Target smaller screens (e.g., tablets) */
+
+@media (max-width: 960px) {
+
+  /* Target smaller screens (e.g., tablets) */
   .welcome {
-    min-height: 70vh; /* Adjust the minimum height for smaller screens */
+    min-height: 70vh;
+    /* Adjust the minimum height for smaller screens */
   }
 }
 
-@media (max-width: 600px) { /* Target even smaller screens (e.g., phones) */
+@media (max-width: 600px) {
+
+  /* Target even smaller screens (e.g., phones) */
   .welcome {
-    min-height: 95vh; /* Adjust the minimum height for very small screens */
+    min-height: 95vh;
+    /* Adjust the minimum height for very small screens */
   }
 }
 
@@ -42,17 +53,20 @@ p, h1, h2, h3, ol {
   justify-content: center;
   text-align: center;
 }
+
 .fullTitle {
-  background: linear-gradient(108deg,#0894FF,#C959DD 34%,#FF2E54 68%,#FF9004);
+  background: linear-gradient(108deg, #0894FF, #C959DD 34%, #FF2E54 68%, #FF9004);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
 .by {
-    color: #000;
-    margin-top: -20px;
-    font-size: 18px;
-    font-weight: 300;
- }
+  color: #000;
+  margin-top: -20px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
 .by::after {
   content: "→";
   display: inline-block;
@@ -60,10 +74,9 @@ p, h1, h2, h3, ol {
 }
 
 .noteInit {
-    color: #161616;
-    text-align: center;
-    padding: 0px 20px;
-  }
+  color: #161616;
+  text-align: center;
+  padding: 0px 20px;
 }
 
 .nextSection {
@@ -82,66 +95,77 @@ p, h1, h2, h3, ol {
 
 @keyframes bounce {
   0% {
-    transform: translateY(0)  rotate(90deg);
+    transform: translateY(0) rotate(90deg);
   }
+
   50% {
-    transform: translateY(-8px)  rotate(90deg);
+    transform: translateY(-8px) rotate(90deg);
   }
+
   100% {
-    transform: translateY(0)  rotate(90deg);
+    transform: translateY(0) rotate(90deg);
   }
 }
 
-.imgFrame{
+.imgFrame {
   width: 100%;
 }
+
 .info {
-   background-image: linear-gradient(to bottom right,#0096FF,#BB64FF,#F55273);
-   /*box-shadow: 0px 0px 10px rgba(125,119,125,1);  theme-dark: 0px 0px 10px rgba(0,0,0,1); */
-  }
+  background-image: linear-gradient(to bottom right, #0096FF, #BB64FF, #F55273);
+  /*box-shadow: 0px 0px 10px rgba(125,119,125,1);  theme-dark: 0px 0px 10px rgba(0,0,0,1); */
+}
+
 .addLink {
   text-align: center;
   padding: 20px 0px;
   font-weight: 600;
 }
+
 .addShortcut {
-    background-color: rgb(66 66 69/70%);
-    padding: 1rem;
-    border-radius: 50px;
-    color: #fff;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
- }
+  background-color: rgb(66 66 69/70%);
+  padding: 1rem;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .text {
   opacity: 0;
   width: 0px;
 }
+
 .text.visible {
-    overflow: hidden;
-    animation: show-text 1.0s forwards;
-    will-change: transform;
-  }
- @keyframes show-text {
+  overflow: hidden;
+  animation: show-text 1.0s forwards;
+  will-change: transform;
+}
+
+@keyframes show-text {
   0% {
     opacity: 0;
     width: 0;
   }
+
   100% {
     opacity: 1;
     width: auto;
     margin-right: 10px;
   }
 }
+
 .plus {
-    font-size: 20px;
-    text-align: center;
-    background-color: #0077ed;
-    border-radius: 50px;
-    padding: 2px 10px 5px;
-    color: #fff;
- }
+  font-size: 20px;
+  text-align: center;
+  background-color: #0077ed;
+  border-radius: 50px;
+  padding: 2px 10px 5px;
+  color: #fff;
+}
+
 .copyright {
   font-size: 14px;
   color: #000;
