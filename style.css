@@ -139,7 +139,7 @@ p, h1, h2, h3, ol {
 
 .text.visible {
   overflow: hidden;
-  animation: show-text 1.0s forwards;
+  animation: show-text 1.5s forwards;
   will-change: transform;
 }
 
