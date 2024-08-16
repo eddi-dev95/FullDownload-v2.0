@@ -57,7 +57,7 @@ p, h1, h2, h3, ol {
 .fullTitle {
   background: linear-gradient(108deg, #0894FF, #C959DD 34%, #FF2E54 68%, #FF9004);
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  --webkit-background-clip: text;
 }
 
 .by {
